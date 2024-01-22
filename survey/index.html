@@ -1,0 +1,153 @@
+<html>
+  <head>
+    <title>Metaverse</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1><span>"Metaverse"</span> Survey Form</h1>
+    <form action="/" method="POST">
+      <div>
+        <label>Name</label>
+        <input type="text" name="first" placeholder="First" />
+        <input type="text" name="last" placeholder="Last" />
+      </div>
+
+      <div>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Email" />
+      </div>
+
+      <div>
+        <label>Gender</label>
+        <input class="gender" type="radio" name="gender" value="female" />Female
+        <input class="gender" type="radio" name="gender" value="male" />Male
+      </div>
+
+      <div>
+        <label>Age</label>
+        <input type="number" name="age" placeholder="Age" min="1" />
+      </div>
+
+      <div>
+        <label>Height</label>
+        <input type="number" name="height" placeholder="Height" min="1" />
+      </div>
+
+      <div id="size">
+        <label id="sizeLabel">Size</label>
+        <div id="sizeWrapper">
+          <div id="topWrapper">
+            <label>Top</label>
+            <select class="sizeSelect" name="size">
+              <option value="xs">Extra Small</option>
+              <option value="s">Small</option>
+              <option value="m">Medium</option>
+              <option value="l">Large</option>
+              <option value="xl">Extra Large</option>
+            </select>
+          </div>
+          <div id="bottomWrapper">
+            <label>Bottom</label>
+            <select class="sizeSelect" name="size">
+              <option value="xs">Extra Small</option>
+              <option value="s">Small</option>
+              <option value="m">Medium</option>
+              <option value="l">Large</option>
+              <option value="xl">Extra Large</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label>Favorite Color</label>
+        <input type="text" name="color" placeholder="Type one word" />
+      </div>
+
+      <div id="styleWrapper">
+        <label>Which styles do you prefer?</label>
+        <div id="checkboxWrapper">
+          <div class="styleList">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="styles"
+              value="streetwear"
+            />Streetwear
+          </div>
+          <div class="styleList">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="styles"
+              value="punk"
+            />Punk
+          </div>
+          <div class="styleList">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="styles"
+              value="casual"
+            />Casual
+          </div>
+          <div class="styleList">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="styles"
+              value="minimalist"
+            />Minimalist
+          </div>
+
+          <div class="styleList">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="styles"
+              value="artsy"
+            />Artsy
+          </div>
+          <div class="styleList">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="styles"
+              value="vacation"
+            />Vacation
+          </div>
+          <div class="styleList">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="styles"
+              value="hipster"
+            />Hipster
+          </div>
+          <div class="styleList">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="styles"
+              value="officewear"
+            />Officewear
+          </div>
+        </div>
+      </div>
+      <div id="textarea">
+        <label id="textareaLabel">Please share your selections</label>
+        <textarea id="textareaField" name="reasons"></textarea>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+  </body>
+</html>
